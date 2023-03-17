@@ -11,12 +11,12 @@ body{
     grid-template-rows: 1fr 8fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     overflow:hidden;
+    background-color:#e2b3a3;
 }
 /* ********************************************HEADER********************************************* */
 h1{
-    font-family: 'TommyOutline', 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-    font-size:4rem;
-}
+    font-size: 4rem;
+} 
 .header-left{
     grid-row: 1fr; 
     grid-column: 2 / span 1;
@@ -25,18 +25,32 @@ h1{
     padding:1rem;
     text-align: right;
     position: relative;
-    font-family: 'TommySolid';
 }
 .header-left > h1{
-    font-family: 'Tommysolid';
+    font-family: 'TommyOutline';
 }
 .header-right{
     grid-row: 1fr; 
     grid-column: 3 / span 4;
     background-color: white;
-    color: #e2b3a3;
+    color: black;
+    background-color:#e2b3a3;
     padding:1rem;
-   
+    font-family: 'TommySolid';
+
+    display:flex; 
+    justify-content: space-between;
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.header-links > a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(207, 4, 160);
 }
 
 /* !#******************************Playing with Animation**************#! */
@@ -48,7 +62,7 @@ h1{
     position: absolute;
     top:-6.2rem;
     right: -12.2rem;
-    /* animation: spin 8s infinite linear; */
+    animation: spin 8s infinite linear;
 }
     @keyframes spin {
         100%{
@@ -70,24 +84,23 @@ menu{
     grid-column: 2/ span 1; 
     display:flex;
     justify-content: center;
-    padding-top:6rem;
+    padding-top:4rem;
 
 
 }
 .menu-links{
     display: flex;
     flex-direction: column;
-    height:50vh;
-    padding:2rem;
-    justify-content: space-around;
-    
+    height:60vh;
+    justify-content: space-between;
 }
 
 .menu-links > a{
     color: rgb(255, 0, 195);
+    text-align: center;
     font-size:1.8rem;
     text-decoration: none;
-    font-family: 'TommySolid', 'Gill Sans',sans-serif;
+    font-family: 'TommyOutline', 'Gill Sans',sans-serif;
 }
 a:hover{
     color:white;
@@ -102,8 +115,8 @@ a:hover{
 
 img{
     height:100vh;
-    max-width:32vw;
-    min-width:32vw
+    max-width:30vw;
+    min-width:30vw
 }
 /*****************************************DISPLAY DIV************************************************************ */
 .display{
@@ -122,6 +135,7 @@ img{
     height:80vh;
     text-align: center;
     padding:50px;
+    background-color:#e2b3a3;
 }
 #display-resume{
     border: 10px solid rgb(199, 141, 199);

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'TommySolid';
+    src: url('/fonts/MADE TOMMY BLACK/made_tommy_black-webfont.woff') format('woff'),
+         url('/fonts/MADE TOMMY BLACK/made_tommy_black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'TommyOutline';
+    src: url('/fonts/MADE TOMMY BLACK OUTLINE/made_tommy_black_outline-webfont.woff') format('woff'),
+         url('/fonts/MADE TOMMY BLACK OUTLINE/made_tommy_black_outline-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    
+}

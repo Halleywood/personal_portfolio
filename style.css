@@ -112,7 +112,8 @@ img{
     background-color: white;
     flex-direction: column;
     overflow:auto;
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 #display-holder{

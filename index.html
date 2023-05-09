@@ -5,58 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="customfonts" href="customfont.css" type="text/css" charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <title>KH Portfolio Page</title>
 </head>
 <body>
     <header class="header-left">
-        <h1>KELSEY 
+        <h1>Kelsey 
             <!-- <div class="rotating"> <h1 class="letter"> L </h1></div> -->
         </h1>
       
     </header>
     <header class="header-right">
-        <h1>HALLEY</h1>
+        <h1>Halley</h1>
         <div class="header-links">
+            <a href="#">Contact Me</a>
             <a href="#">LinkedIn</a>
             <a href="#">GitHub</a>
             <a href="#">Social</a>
         </div>
     </header>
-    <div class="hero">
-        <img src="img/pastelsalmon.jpg" alt="pinkmaroonphoto">
-    </div>
     <menu> 
         <div class="menu-links">
-            <a href="#" onclick = changeDisplay(id) id="aboutme">ABOUT</a>
-            <a href="#" onclick = changeDisplay(id) id="resume">RESUME</a>
-            <a href="#" onclick = changeDisplay(id) id="p1">PROJECT #1</a>
-            <a href="#" onclick = changeDisplay(id) id="p2">PROJECT #2</a>
-            <a href="#" onclick = changeDisplay(id) id="p3">PROJECT #3</a>
-            <a href="#" onclick = changeDisplay(id) id="contact">CONTACT</a>
+            <a href="#display-aboutme" onclick = changeDisplay(id) id="aboutme">ABOUT</a>
+            <a href="#display-resume" onclick = changeDisplay(id) id="resume">RESUME</a>
+            <a href="#display-p1" onclick = changeDisplay(id) id="p1">PROJECT #1</a>
+            <a href="#display-p2" onclick = changeDisplay(id) id="p2">PROJECT #2</a>
+            <a href="#display-p3" onclick = changeDisplay(id) id="p3">PROJECT #3</a>
         </div>
     
     </menu>
     <div class="display">
         <div id="display-holder">
-           need something here, working on some social media icons, contact info, a CSS animation maybe.
+        
         </div>
         <div id="display-resume">
-            This div will contain resume contents, screenshot of PDF version, or maybe the entire contents formatted and typed out here. 
+           
         </div>
         <div id="display-aboutme">
-            Information about personality type, hobbies, keep it brief keep it fun. 
+           
         </div>
         <div id="display-p1">
-            <h6>Project 1</h6>
-            <p>Will link current project here, like title, screenshot of UX/UI design, challanges faced and overcame, goals for future versions things like that. </p>
+
         </div>
         <div id="display-p2">
-            Project 2
+           
         </div>
-        <div id="display-contact">
-            Get In Touch!
+        <div id="display-p3">
+           
         </div>
+
     </div>
 </body>
 

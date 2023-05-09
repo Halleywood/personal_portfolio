@@ -3,7 +3,7 @@
 *{
     margin: 0; 
     padding: 0; 
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Caveat', cursive;
 }
 body{
     display: grid; 
@@ -11,33 +11,30 @@ body{
     grid-template-rows: 1fr 8fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     overflow:hidden;
-    background-color:#e2b3a3;
+    background-image: url('scape3.png');
+    background-repeat: no-repeat;
+    background-size: 165% 230%;
+    background-position: 50% 70%;
+  
 }
 /* ********************************************HEADER********************************************* */
 h1{
-    font-size: 4rem;
+    font-size: 6rem;
+    color: rgb(60, 80, 75);
+    text-shadow: 2px 2px 2px rgb(112, 57, 20);
+    font-family: 'Caveat', cursive;
 } 
 .header-left{
     grid-row: 1fr; 
-    grid-column: 2 / span 1;
-    background-color: black;
-    color: #e2b3a3;
+    grid-column: 1 / span 1;
     padding:1rem;
     text-align: right;
-    position: relative;
-}
-.header-left > h1{
-    font-family: 'TommyOutline';
 }
 .header-right{
     grid-row: 1fr; 
-    grid-column: 3 / span 4;
-    background-color: white;
-    color: black;
-    background-color:#e2b3a3;
+    grid-column: 2 / span 5;
+    color: rgb(75,101,95);
     padding:1rem;
-    font-family: 'TommySolid';
-
     display:flex; 
     justify-content: space-between;
 }
@@ -45,47 +42,21 @@ h1{
 .header-links{
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 .header-links > a{
     text-decoration: none;
     padding: 10px;
-    color: rgb(207, 4, 160);
+    color: black;
 }
 
-/* !#******************************Playing with Animation**************#! */
-.rotating{
-    width: 23rem;
-    height:20rem;
-    border: 2px solid green;
-    border-radius: 50%;
-    position: absolute;
-    top:-6.2rem;
-    right: -12.2rem;
-    animation: spin 8s infinite linear;
-}
-    @keyframes spin {
-        100%{
-            transform: rotate(360deg);
-        }
-    }
-
-.letter{
-    font-size:4rem;
-    color: red;
-    position: absolute;
-    bottom: 0.5em;
-    left: 1.5rem;
-}
 /* ***********************************LEFT MENU ************************************************* */
 menu{
-    background-color: black;
     grid-row: 2; 
-    grid-column: 2/ span 1; 
+    grid-column: 1/ span 1; 
     display:flex;
     justify-content: center;
     padding-top:4rem;
-
 
 }
 .menu-links{
@@ -93,40 +64,28 @@ menu{
     flex-direction: column;
     height:60vh;
     justify-content: space-between;
+   
 }
 
 .menu-links > a{
-    color: rgb(255, 0, 195);
     text-align: center;
-    font-size:1.8rem;
+    font-size:2.5rem;
     text-decoration: none;
-    font-family: 'TommyOutline', 'Gill Sans',sans-serif;
+    color: black;
+    text-shadow: 1px 1px 0px rgb(255, 165, 8);
+
 }
 a:hover{
-    color:white;
+    color:rgb(253, 22, 6);
     transition: 0.25s ease-in;
 }
 
-/******************************************HERO IMAGE *********************************************************** */
-.hero{
-    grid-row: 1 / span 2; 
-    grid-column: 1 / span 1; 
-}
-
-img{
-    height:100vh;
-    max-width:30vw;
-    min-width:30vw
-}
 /*****************************************DISPLAY DIV************************************************************ */
 .display{
     grid-row: 2; 
-    grid-column: 3 /span 4;
+    grid-column: 2 /span 5;
     justify-content: center;
-    background-color: white;
     flex-direction: column;
-    overflow:auto;
-    max-width: 100%;
     overflow-x: hidden;
 
 }
@@ -135,10 +94,9 @@ img{
     height:80vh;
     text-align: center;
     padding:50px;
-    background-color:#e2b3a3;
 }
 #display-resume{
-    border: 10px solid rgb(199, 141, 199);
+    border: 3px solid yellow;
     text-align: center;
     padding: 50px;
     min-height:90vh;
@@ -167,3 +125,9 @@ img{
     padding: 50px;
     min-height:90vh;
 }
+
+@media screen and (max-width: 767px) {
+    body {
+      background-size: 100%;
+    }
+  }
